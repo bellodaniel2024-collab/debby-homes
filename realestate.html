@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home | Debby Homes — Luxury Real Estate on Lagos Island</title>
+<meta name="description" content="Luxury apartments, shortlets and homes for sale across Ikoyi, Victoria Island, Lekki, Banana Island and more.">
+<meta name="theme-color" content="#0A1F3D">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏛️</text></svg>">
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;0,700;1,500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<!-- Bootstrap 5 -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+<!-- Site styles -->
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Loading animation -->
+<div id="loader">
+  <div class="loader-mark">Debby<span>Homes</span></div>
+  <div class="loader-bar"></div>
+</div>
+
+<!-- ===================== HEADER ===================== -->
+<header>
+  <div class="topbar d-none d-md-block">
+    <div class="container-xl">
+      <div class="topbar-links">
+        <span><i class="bi bi-envelope"></i> hello@debbyhomes.ng</span>
+        <span><i class="bi bi-telephone"></i> +234 802 345 6780</span>
+        <span><i class="bi bi-clock"></i> Mon–Sat, 9am–6pm</span>
+      </div>
+      <div class="d-flex align-items-center">
+        <a href="contact.html">Book a Consultation</a>
+        <span class="topbar-social">
+          <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+        </span>
+      </div>
+    </div>
+  </div>
+  <div class="site-header">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-xl">
+        <a class="navbar-brand" href="index.html">Debby<span>Homes</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-label="Toggle navigation">
+          <i class="bi bi-list"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav mx-auto align-items-lg-center gap-lg-1">
+            <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle " href="properties.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Properties</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="properties.html">All Properties</a></li>
+<li><a class="dropdown-item" href="apartments.html">Apartments</a></li>
+<li><a class="dropdown-item" href="shortlets.html">Shortlets</a></li>
+<li><a class="dropdown-item" href="houses.html">Houses for Sale</a></li>
+              </ul>
+            </li>
+<li class="nav-item"><a class="nav-link " href="about.html">About Us</a></li>
+<li class="nav-item"><a class="nav-link " href="services.html">Services</a></li>
+<li class="nav-item"><a class="nav-link " href="blog.html">Blog</a></li>
+<li class="nav-item"><a class="nav-link " href="faq.html">FAQs</a></li>
+<li class="nav-item"><a class="nav-link " href="contact.html">Contact</a></li>
+          </ul>
+          <div class="d-flex align-items-center">
+            <a href="properties.html?wishlist=1" class="nav-icon-btn" aria-label="View saved properties">
+              <i class="bi bi-heart"></i>
+              <span class="badge-count wishlist-badge" style="display:none;">0</span>
+            </a>
+            <button class="theme-toggle" aria-label="Toggle dark mode"><i class="bi bi-moon-stars"></i></button>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<!-- ===================== HERO ===================== -->
+<section class="hero" data-slider>
+  <div class="hero-slide active" style="background-image:url('https://images.unsplash.com/photo-1613977257363-707ba9348227?q=80&w=1920&auto=format&fit=crop')"></div>
+  <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=1920&auto=format&fit=crop')"></div>
+  <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1920&auto=format&fit=crop')"></div>
+  <div class="hero-content container-xl">
+    <div class="eyebrow">Lagos Island · Ikoyi · Victoria Island · Lekki · Banana Island</div>
+    <h1>Waterfront living, <em>elevated</em>.</h1>
+    <p class="lead">Debby Homes curates Lagos Island's finest apartments, shortlets and homes for sale — for clients who want more than an address.</p>
+    <div class="hero-actions">
+      <a href="properties.html" class="btn btn-gold">Browse Properties</a>
+      <a href="contact.html" class="btn btn-outline-light">Book a Consultation</a>
+    </div>
+  </div>
+  <div class="hero-dots"></div>
+  <div class="hero-scroll-cue"><span class="line"></span>Scroll</div>
+</section>
+
+<!-- ===================== SEARCH (signature glass bar) ===================== -->
+<div class="container-xl search-glass-wrap">
+  <form class="search-glass" id="heroSearchForm">
+    <div class="row g-3 align-items-end">
+      <div class="col-lg-3 col-md-6">
+        <label class="form-label">Location</label>
+        <select class="form-select" name="location">
+          <option value="">Any Location</option>
+          <option>Ikoyi</option><option>Victoria Island</option><option>Lekki Phase 1</option>
+          <option>Banana Island</option><option>Oniru</option><option>Chevron</option>
+          <option>Ajah</option><option>Ikate</option>
+        </select>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <label class="form-label">Property Type</label>
+        <select class="form-select" name="type">
+          <option value="">Any Type</option>
+          <option>Apartment</option><option>Duplex</option><option>Bungalow</option>
+          <option>Villa</option><option>Terrace</option><option>Studio</option><option>Penthouse</option>
+        </select>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <label class="form-label">Purpose</label>
+        <select class="form-select" name="status">
+          <option value="">Buy, Rent or Shortlet</option>
+          <option value="For Sale">For Sale</option>
+          <option value="Rent">For Rent</option>
+          <option value="Shortlet">Shortlet</option>
+        </select>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <button class="btn btn-gold" type="submit"><i class="bi bi-search"></i> Search Properties</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<!-- ===================== FEATURED PROPERTIES (tabs) ===================== -->
+<section class="section">
+  <div class="container-xl">
+    <div class="section-head reveal">
+      <div class="horizon-rule"><i></i></div>
+      <div class="eyebrow" style="justify-content:center">Handpicked</div>
+      <h2>Featured Properties</h2>
+      <p class="lead">A rotating edit of the addresses generating the most interest across Lagos Island this month.</p>
+    </div>
+
+    <ul class="nav pill-tabs" role="tablist">
+      <li class="nav-item"><button class="nav-link active" data-bs-toggle="tab" data-bs-target="#tab-featured" type="button">Featured</button></li>
+      <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-apartments" type="button">Apartments</button></li>
+      <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-shortlets" type="button">Shortlets</button></li>
+      <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-sale" type="button">Houses for Sale</button></li>
+    </ul>
+
+    <div class="tab-content">
+      <div class="tab-pane fade show active" id="tab-featured"><div class="row g-4" id="featuredGrid"></div></div>
+      <div class="tab-pane fade" id="tab-apartments"><div class="row g-4" id="apartmentsGrid"></div></div>
+      <div class="tab-pane fade" id="tab-shortlets"><div class="row g-4" id="shortletsGrid"></div></div>
+      <div class="tab-pane fade" id="tab-sale"><div class="row g-4" id="saleGrid"></div></div>
+    </div>
+
+    <div class="text-center mt-5">
+      <a href="properties.html" class="btn btn-outline-navy">View All Properties <i class="bi bi-arrow-right"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== WHY CHOOSE US ===================== -->
+<section class="section bg-ivory-2">
+  <div class="container-xl">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6 reveal">
+        <div class="why-media" style="height:560px;">
+          <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1200&auto=format&fit=crop" alt="Luxury waterfront residence in Ikoyi">
+          <div class="why-badge">
+            <div class="num">14+</div>
+            <div class="cap">Years on Lagos Island</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 reveal">
+        <div class="eyebrow">Why Debby Homes</div>
+        <h2 class="mb-4">A local specialist's eye, a concierge's care.</h2>
+        <div class="feature-item">
+          <div class="fi-icon"><i class="bi bi-shield-check"></i></div>
+          <div><h4>Verified Listings Only</h4><p>Every property is inspected and title-checked before it reaches our portfolio.</p></div>
+        </div>
+        <div class="feature-item">
+          <div class="fi-icon"><i class="bi bi-geo-alt"></i></div>
+          <div><h4>Island Specialists</h4><p>We work exclusively across Ikoyi, VI, Lekki and Banana Island — depth beats breadth.</p></div>
+        </div>
+        <div class="feature-item">
+          <div class="fi-icon"><i class="bi bi-headset"></i></div>
+          <div><h4>Concierge Support</h4><p>From viewing to move-in, one dedicated agent sees your search through to the end.</p></div>
+        </div>
+        <div class="feature-item" style="border-bottom:none;">
+          <div class="fi-icon"><i class="bi bi-graph-up-arrow"></i></div>
+          <div><h4>Investment Insight</h4><p>Transparent data on yields, appreciation and shortlet performance by neighbourhood.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== STATS ===================== -->
+<section class="stats-band">
+  <div class="container-xl">
+    <div class="row g-4">
+      <div class="col-6 col-md-3 stat-item"><div class="num" data-counter="480" data-suffix="+">0</div><div class="cap">Properties Managed</div></div>
+      <div class="col-6 col-md-3 stat-item"><div class="num" data-counter="14" data-suffix=" Yrs">0</div><div class="cap">On Lagos Island</div></div>
+      <div class="col-6 col-md-3 stat-item"><div class="num" data-counter="1200" data-suffix="+">0</div><div class="cap">Happy Clients</div></div>
+      <div class="col-6 col-md-3 stat-item"><div class="num" data-counter="98" data-suffix="%">0</div><div class="cap">Client Satisfaction</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== TESTIMONIALS ===================== -->
+<section class="section">
+  <div class="container-xl">
+    <div class="section-head reveal">
+      <div class="horizon-rule"><i></i></div>
+      <div class="eyebrow" style="justify-content:center">Client Stories</div>
+      <h2>What Our Clients Say</h2>
+    </div>
+    <div class="row g-4">
+      <div class="col-lg-4 reveal">
+        <div class="testi-card">
+          <div class="testi-stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+          <p class="testi-quote">"Debby Homes found us a Banana Island apartment in under three weeks — the whole process felt effortless, from viewing to keys."</p>
+          <div class="testi-person">
+            <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=200&auto=format&fit=crop" alt="Client portrait">
+            <div><div class="name">Ifeoma A.</div><div class="role">Homeowner, Banana Island</div></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 reveal">
+        <div class="testi-card">
+          <div class="testi-stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+          <p class="testi-quote">"Our shortlet in Lekki has stayed booked at 90% occupancy since Debby Homes took over management. The reporting alone is worth it."</p>
+          <div class="testi-person">
+            <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=200&auto=format&fit=crop" alt="Client portrait">
+            <div><div class="name">Bayo O.</div><div class="role">Shortlet Investor, Lekki Phase 1</div></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 reveal">
+        <div class="testi-card">
+          <div class="testi-stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+          <p class="testi-quote">"Selling our Ikoyi duplex could have been stressful. Their team handled every inspection and closed above asking price."</p>
+          <div class="testi-person">
+            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=200&auto=format&fit=crop" alt="Client portrait">
+            <div><div class="name">The Adeyemi Family</div><div class="role">Sellers, Ikoyi</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FEATURED LOCATIONS ===================== -->
+<section class="section bg-ivory-2">
+  <div class="container-xl">
+    <div class="section-head reveal">
+      <div class="horizon-rule"><i></i></div>
+      <div class="eyebrow" style="justify-content:center">Where We Work</div>
+      <h2>Featured Locations</h2>
+      <p class="lead">Eight neighbourhoods, one island lifestyle — explore the pockets of Lagos Island we know best.</p>
+    </div>
+    <div class="row g-4">
+      <div class="col-lg-3 col-md-6 reveal">
+        <a href="properties.html?location=Ikoyi" class="loc-card d-block">
+          <img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?q=80&w=800&auto=format&fit=crop" alt="Ikoyi">
+          <div class="loc-card-body"><h4>Ikoyi</h4><span>92 Listings</span></div>
+        </a>
+      </div>
+      <div class="col-lg-3 col-md-6 reveal">
+        <a href="properties.html?location=Victoria Island" class="loc-card d-block">
+          <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?q=80&w=800&auto=format&fit=crop" alt="Victoria Island">
+          <div class="loc-card-body"><h4>Victoria Island</h4><span>77 Listings</span></div>
+        </a>
+      </div>
+      <div class="col-lg-3 col-md-6 reveal">
+        <a href="properties.html?location=Lekki Phase 1" class="loc-card d-block">
+          <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?q=80&w=800&auto=format&fit=crop" alt="Lekki Phase 1">
+          <div class="loc-card-body"><h4>Lekki Phase 1</h4><span>104 Listings</span></div>
+        </a>
+      </div>
+      <div class="col-lg-3 col-md-6 reveal">
+        <a href="properties.html?location=Banana Island" class="loc-card d-block">
+          <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?q=80&w=800&auto=format&fit=crop" alt="Banana Island">
+          <div class="loc-card-body"><h4>Banana Island</h4><span>41 Listings</span></div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CTA BANNER ===================== -->
+<section class="section">
+  <div class="container-xl">
+    <div class="cta-banner reveal">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-8">
+          <div class="eyebrow" style="color:var(--gold-light)">Ready When You Are</div>
+          <h2>Let's find your next Lagos Island address.</h2>
+          <p style="color:var(--gray-light); max-width:520px;">Tell us what you're looking for and a Debby Homes specialist will curate a shortlist within 48 hours.</p>
+        </div>
+        <div class="col-lg-4 text-lg-end">
+          <a href="contact.html" class="btn btn-gold">Get Started <i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== BLOG PREVIEW ===================== -->
+<section class="section bg-ivory-2">
+  <div class="container-xl">
+    <div class="section-head reveal">
+      <div class="horizon-rule"><i></i></div>
+      <div class="eyebrow" style="justify-content:center">From the Journal</div>
+      <h2>Latest Insights</h2>
+    </div>
+    <div class="row g-4">
+      <div class="col-lg-4 reveal">
+        <div class="blog-card">
+          <div class="bc-media"><img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=800&auto=format&fit=crop" alt="Lagos Island skyline"></div>
+          <div class="bc-body">
+            <span class="bc-cat">Market Trends</span><span class="bc-date">May 2026</span>
+            <h4><a href="blog.html">Why Banana Island Yields Keep Climbing</a></h4>
+            <p class="bc-excerpt">A look at what's driving demand for waterfront apartments in 2026.</p>
+            <a href="blog.html" class="bc-readmore">Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 reveal">
+        <div class="blog-card">
+          <div class="bc-media"><img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=800&auto=format&fit=crop" alt="Modern interior"></div>
+          <div class="bc-body">
+            <span class="bc-cat">Buying Guide</span><span class="bc-date">April 2026</span>
+            <h4><a href="blog.html">A First-Time Buyer's Guide to Ikoyi</a></h4>
+            <p class="bc-excerpt">Everything to know before you make an offer on the island.</p>
+            <a href="blog.html" class="bc-readmore">Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 reveal">
+        <div class="blog-card">
+          <div class="bc-media"><img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=800&auto=format&fit=crop" alt="Shortlet apartment lounge"></div>
+          <div class="bc-body">
+            <span class="bc-cat">Shortlets</span><span class="bc-date">March 2026</span>
+            <h4><a href="blog.html">Turning a Lekki Apartment Into a 5-Star Shortlet</a></h4>
+            <p class="bc-excerpt">Five upgrades that consistently lift shortlet booking rates.</p>
+            <a href="blog.html" class="bc-readmore">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== NEWSLETTER ===================== -->
+<section class="section">
+  <div class="container-xl">
+    <div class="newsletter reveal">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-6">
+          <h3 class="mb-2">Stay ahead of the market.</h3>
+          <p class="mb-0" style="color:var(--charcoal)">New listings, price shifts and neighbourhood reports — straight to your inbox, monthly.</p>
+        </div>
+        <div class="col-lg-6">
+          <form class="d-flex gap-2 flex-wrap flex-sm-nowrap newsletter-form">
+            <input type="email" class="form-control" placeholder="Enter your email" required>
+            <button class="btn btn-navy" type="submit">Subscribe</button>
+          </form>
+          <div class="nl-msg small mt-2 d-none" style="color:var(--lagoon); font-weight:700;"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="site-footer">
+  <div class="container-xl">
+    <div class="row g-5 pb-5">
+      <div class="col-lg-4">
+        <div class="fbrand mb-3">Debby<span>Homes</span></div>
+        <p>Debby Homes curates luxury apartments, shortlets and sale properties across Lagos Island — Ikoyi, Victoria Island, Lekki, Banana Island and beyond — for clients who expect the best of city living.</p>
+        <div class="footer-social mt-4">
+          <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+          <a href="#" aria-label="X"><i class="bi bi-twitter-x"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-4 col-6">
+        <h5>Explore</h5>
+        <ul class="footer-links list-unstyled">
+          <li><a href="properties.html">All Properties</a></li>
+          <li><a href="apartments.html">Apartments</a></li>
+          <li><a href="shortlets.html">Shortlets</a></li>
+          <li><a href="houses.html">Houses for Sale</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-2 col-md-4 col-6">
+        <h5>Company</h5>
+        <ul class="footer-links list-unstyled">
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="faq.html">FAQs</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-4 col-md-4">
+        <h5>Get in Touch</h5>
+        <ul class="footer-contact list-unstyled">
+          <li><i class="bi bi-geo-alt"></i> <span>12 Kofo Abayomi Street, Victoria Island, Lagos</span></li>
+          <li><i class="bi bi-telephone"></i> <span>+234 802 345 6780</span></li>
+          <li><i class="bi bi-envelope"></i> <span>hello@debbyhomes.ng</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="year"></span> Debby Homes. All rights reserved.</span>
+      <span><a href="#">Privacy Policy</a> &nbsp;·&nbsp; <a href="#">Terms of Service</a></span>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/2348023456780" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><i class="bi bi-whatsapp"></i></a>
+<button id="backToTop" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

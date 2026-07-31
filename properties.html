@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>All Properties | Debby Homes — Luxury Real Estate on Lagos Island</title>
+<meta name="description" content="Browse our full portfolio of apartments, shortlets and homes for sale across Lagos Island.">
+<meta name="theme-color" content="#0A1F3D">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏛️</text></svg>">
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;0,700;1,500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<!-- Bootstrap 5 -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+<!-- Site styles -->
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="inner-page">
+
+<!-- Loading animation -->
+<div id="loader">
+  <div class="loader-mark">Debby<span>Homes</span></div>
+  <div class="loader-bar"></div>
+</div>
+
+<!-- ===================== HEADER ===================== -->
+<header>
+  <div class="topbar d-none d-md-block">
+    <div class="container-xl">
+      <div class="topbar-links">
+        <span><i class="bi bi-envelope"></i> hello@debbyhomes.ng</span>
+        <span><i class="bi bi-telephone"></i> +234 802 345 6780</span>
+        <span><i class="bi bi-clock"></i> Mon–Sat, 9am–6pm</span>
+      </div>
+      <div class="d-flex align-items-center">
+        <a href="contact.html">Book a Consultation</a>
+        <span class="topbar-social">
+          <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+        </span>
+      </div>
+    </div>
+  </div>
+  <div class="site-header">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-xl">
+        <a class="navbar-brand" href="index.html">Debby<span>Homes</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-label="Toggle navigation">
+          <i class="bi bi-list"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav mx-auto align-items-lg-center gap-lg-1">
+            <li class="nav-item"><a class="nav-link " href="index.html">Home</a></li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="properties.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Properties</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="properties.html">All Properties</a></li>
+<li><a class="dropdown-item" href="apartments.html">Apartments</a></li>
+<li><a class="dropdown-item" href="shortlets.html">Shortlets</a></li>
+<li><a class="dropdown-item" href="houses.html">Houses for Sale</a></li>
+              </ul>
+            </li>
+<li class="nav-item"><a class="nav-link " href="about.html">About Us</a></li>
+<li class="nav-item"><a class="nav-link " href="services.html">Services</a></li>
+<li class="nav-item"><a class="nav-link " href="blog.html">Blog</a></li>
+<li class="nav-item"><a class="nav-link " href="faq.html">FAQs</a></li>
+<li class="nav-item"><a class="nav-link " href="contact.html">Contact</a></li>
+          </ul>
+          <div class="d-flex align-items-center">
+            <a href="properties.html?wishlist=1" class="nav-icon-btn" aria-label="View saved properties">
+              <i class="bi bi-heart"></i>
+              <span class="badge-count wishlist-badge" style="display:none;">0</span>
+            </a>
+            <button class="theme-toggle" aria-label="Toggle dark mode"><i class="bi bi-moon-stars"></i></button>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<section class="page-banner">
+  <div class="container-xl">
+    <h1>All Properties</h1>
+    <div class="breadcrumb-row"><a href="index.html">Home</a> &nbsp;/&nbsp; Properties</div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container-xl">
+    <p class="text-center lead mb-5" style="color:var(--gray); max-width:700px; margin-inline:auto;">Browse our full portfolio of apartments, shortlets and homes for sale across Lagos Island.</p>
+
+    <div class="row g-4">
+      <!-- Filters sidebar -->
+      <div class="col-lg-3">
+        <div class="filters-panel">
+          <h5 class="mb-3">Filter Properties</h5>
+          <form id="filtersForm">
+            <div class="filter-group">
+              <label class="f-title">Keyword</label>
+              <input type="text" class="form-control" name="q" placeholder="Search by name or area">
+            </div>
+            <div class="filter-group">
+              <label class="f-title">Location</label>
+              <select class="form-select" name="location">
+                <option value="">Any Location</option>
+                <option>Ikoyi</option><option>Victoria Island</option><option>Lekki Phase 1</option>
+                <option>Banana Island</option><option>Oniru</option><option>Chevron</option>
+                <option>Ajah</option><option>Ikate</option>
+              </select>
+            </div>
+            <div class="filter-group">
+              <label class="f-title">Property Type</label>
+              <select class="form-select" name="type">
+                <option value="">Any Type</option>
+                <option>Apartment</option><option>Duplex</option><option>Bungalow</option>
+                <option>Villa</option><option>Terrace</option><option>Studio</option><option>Penthouse</option>
+              </select>
+            </div>
+            
+            <div class="filter-group">
+              <label class="f-title">Purpose</label>
+              <select class="form-select" name="status">
+                <option value="">Any</option>
+                <option value="For Sale">For Sale</option>
+                <option value="Rent">Rent</option>
+                <option value="Shortlet">Shortlet</option>
+              </select>
+            </div>
+            <div class="filter-group">
+              <label class="f-title">Bedrooms</label>
+              <select class="form-select" name="beds">
+                <option value="">Any</option>
+                <option value="1">1+</option><option value="2">2+</option><option value="3">3+</option>
+                <option value="4">4+</option><option value="5">5+</option>
+              </select>
+            </div>
+            <div class="filter-group">
+              <label class="f-title">Bathrooms</label>
+              <select class="form-select" name="baths">
+                <option value="">Any</option>
+                <option value="1">1+</option><option value="2">2+</option><option value="3">3+</option><option value="4">4+</option>
+              </select>
+            </div>
+            <div class="filter-group">
+              <label class="f-title">Furnishing</label>
+              <select class="form-select" name="furnished">
+                <option value="">Any</option>
+                <option value="true">Furnished</option>
+                <option value="false">Unfurnished</option>
+              </select>
+            </div>
+            <div class="filter-group">
+              <label class="f-title">Max Price (₦)</label>
+              <input type="number" class="form-control" name="priceMax" placeholder="e.g. 100000000">
+            </div>
+            <div class="filter-group d-flex gap-2">
+              <button type="button" id="resetFilters" class="btn btn-outline-navy btn-sm btn-block">Reset Filters</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- Results -->
+      <div class="col-lg-9">
+        <div class="results-topbar">
+          <div class="results-count" id="resultsCount">Showing properties</div>
+          <div class="d-flex align-items-center gap-3">
+            <select class="form-select form-select-sm" name="sort" form="filtersForm" style="width:auto;" onchange="document.getElementById('filtersForm').dispatchEvent(new Event('input'))">
+              <option value="">Sort: Newest</option>
+              <option value="price-asc">Price: Low to High</option>
+              <option value="price-desc">Price: High to Low</option>
+              <option value="beds">Most Bedrooms</option>
+            </select>
+            <div class="view-toggle d-none d-md-flex gap-1">
+              <button type="button" class="active" data-view="grid" aria-label="Grid view"><i class="bi bi-grid-3x3-gap"></i></button>
+              <button type="button" data-view="list" aria-label="List view"><i class="bi bi-list-ul"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="row g-4" id="listingGrid"></div>
+
+        <div id="noResults" class="no-results d-none">
+          <i class="bi bi-house-x" style="font-size:2.4rem; color:var(--gray-light);"></i>
+          <h4 class="mt-3">No properties match your filters</h4>
+          <p style="color:var(--gray)">Try adjusting or resetting your filters to see more results.</p>
+        </div>
+
+        <nav class="mt-5" aria-label="Property results pagination">
+          <ul class="pagination justify-content-center" id="pagination"></ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="site-footer">
+  <div class="container-xl">
+    <div class="row g-5 pb-5">
+      <div class="col-lg-4">
+        <div class="fbrand mb-3">Debby<span>Homes</span></div>
+        <p>Debby Homes curates luxury apartments, shortlets and sale properties across Lagos Island — Ikoyi, Victoria Island, Lekki, Banana Island and beyond — for clients who expect the best of city living.</p>
+        <div class="footer-social mt-4">
+          <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+          <a href="#" aria-label="X"><i class="bi bi-twitter-x"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-4 col-6">
+        <h5>Explore</h5>
+        <ul class="footer-links list-unstyled">
+          <li><a href="properties.html">All Properties</a></li>
+          <li><a href="apartments.html">Apartments</a></li>
+          <li><a href="shortlets.html">Shortlets</a></li>
+          <li><a href="houses.html">Houses for Sale</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-2 col-md-4 col-6">
+        <h5>Company</h5>
+        <ul class="footer-links list-unstyled">
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="faq.html">FAQs</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-4 col-md-4">
+        <h5>Get in Touch</h5>
+        <ul class="footer-contact list-unstyled">
+          <li><i class="bi bi-geo-alt"></i> <span>12 Kofo Abayomi Street, Victoria Island, Lagos</span></li>
+          <li><i class="bi bi-telephone"></i> <span>+234 802 345 6780</span></li>
+          <li><i class="bi bi-envelope"></i> <span>hello@debbyhomes.ng</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="year"></span> Debby Homes. All rights reserved.</span>
+      <span><a href="#">Privacy Policy</a> &nbsp;·&nbsp; <a href="#">Terms of Service</a></span>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/2348023456780" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><i class="bi bi-whatsapp"></i></a>
+<button id="backToTop" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
