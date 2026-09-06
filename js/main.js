@@ -474,7 +474,7 @@ function initPropertyDetails(){
   document.getElementById("pd-furnished").textContent = p.furnished ? "Furnished" : "Unfurnished";
   document.getElementById("pd-id").textContent = "DH-" + String(p.id).padStart(4, "0");
 
-  const mainImg = document.getElementById("pd-main-image");
+  const mainImg = document.getElementByIdj("pd-main-image");
   mainImg.src = p.images[0];
   mainImg.alt = p.title;
   document.getElementById("pd-thumbs").innerHTML = p.images.map((img, i) => `<img src="${img}" alt="View ${i+1}" class="${i===0?"active":""}" data-src="${img}">`).join("");
@@ -617,3 +617,4 @@ function initFaqSearch(){
     });
   });
 }
+
