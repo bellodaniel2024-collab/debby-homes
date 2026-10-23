@@ -436,6 +436,58 @@ html[data-theme="dark"] .vc-icon{ background:rgba(198,161,91,.12); color:var(--g
 html[data-theme="dark"] .badge-soft{ background:rgba(198,161,91,.14); color:var(--gold); }
 .divider-gold{ width:60px; height:2px; background:var(--gold); margin:18px auto; }
 
+/* ==========================================================================
+   ANIMATION SUPPORT OVERRIDES
+   These small tweaks make the animations.css effects work correctly.
+   ========================================================================== */
+
+/* Price tab starts hidden so the CSS slide-up reveal works on hover */
+.pc-price-tab {
+  transform: translateY(100%);
+}
+
+/* Why-media image fills the container correctly for parallax */
+.why-media {
+  overflow: hidden;
+}
+.why-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.12);
+  will-change: transform;
+}
+
+/* Loader: hide old .loader-mark/.loader-bar elements (replaced in index.html) */
+.loader-mark, .loader-bar { display: none; }
+
+/* Horizon rule lines start at 0 width for the draw animation */
+.horizon-rule::before,
+.horizon-rule::after {
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform .9s .2s ease;
+}
+.section-head.reveal.in .horizon-rule::before,
+.section-head.reveal.in .horizon-rule::after {
+  transform: scaleX(1);
+}
+
+/* Ensure hero overlays sit above particles canvas */
+.hero::after { z-index: 2; }
+.hero-content { z-index: 3; }
+.hero-dots    { z-index: 3; }
+.hero-scroll-cue { z-index: 3; }
+
+/* Glass search bar sits above hero overlay */
+.search-glass-wrap { z-index: 4; }
+
+/* Stat item needs relative positioning for the ring pseudo-element */
+.stat-item { position: relative; overflow: visible; }
+
+/* Feature item hover shift needs overflow visible on parent */
+.col-lg-6 .feature-item { overflow: visible; }
+
 @media (max-width: 991.98px){
   .hero{ height:auto; min-height:720px; padding-bottom:120px; }
   .search-glass-wrap{ margin-top:-70px; }
